@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://ci46q0u4vtgd2"]
+
+[ext_resource type="PackedScene" uid="uid://dywrtm7rpn3uv" path="res://node_2d.tscn" id="1_kk7ve"]
+[ext_resource type="Texture2D" uid="uid://bfewmtp1uwsfx" path="res://icon.svg" id="2_bm3pk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lfkbx"]
+size = Vector2(10, 10)
+
+[node name="Node2D" type="Node2D" unique_id=129046339]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=224340109]
+
+[node name="Node2D" parent="." unique_id=1671538527 instance=ExtResource("1_kk7ve")]
+
+[node name="Enemigo" type="CharacterBody2D" parent="." unique_id=1010212772]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemigo" unique_id=784479112]
+position = Vector2(227, -5)
+shape = SubResource("RectangleShape2D_lfkbx")
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemigo" unique_id=943206488]
+position = Vector2(227.00002, -4.9999986)
+scale = Vector2(0.0781252, 0.07812499)
+texture = ExtResource("2_bm3pk")
+
+[node name="Node2D2" parent="." unique_id=203533463 instance=ExtResource("1_kk7ve")]
